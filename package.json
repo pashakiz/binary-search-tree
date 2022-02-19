@@ -1,5 +1,5 @@
 {
-  "name": "react-hello-world",
+  "name": "binary-search-tree",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pashakiz/react-hello-world.git"
+    "url": "git+https://github.com/pashakiz/binary-search-tree.git"
   },
   "keywords": [],
   "author": "Pavel Kizernis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pashakiz/react-hello-world/issues"
+    "url": "https://github.com/pashakiz/binary-search-tree/issues"
   },
-  "homepage": "https://github.com/pashakiz/react-hello-world#readme",
+  "homepage": "https://github.com/pashakiz/binary-search-tree#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
