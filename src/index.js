@@ -1,13 +1,12 @@
 import '@scss/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
 const foo = bar => console.log('some...', bar)
 foo('bar')
 
-const title = 'Hello World!';
-
 ReactDOM.render(
-  <div>{title}</div>,
+  <App />,
   document.getElementById('app')
 );
