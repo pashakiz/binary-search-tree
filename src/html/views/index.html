@@ -1,7 +1,17 @@
 <%= _.template(require('./../includes/header.html'))() %>
 
   <main class="main">
-    <div id="app"></div>
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body">
+          Press the space bar to add random item to tree.<br>Click on the item to remove it from the tree.
+        </div>
+      </div>
+
+      <div id="app"></div>
+
+    </div>
   </main>
 
 <%= _.template(require('./../includes/footer.html'))() %>

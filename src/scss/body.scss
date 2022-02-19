@@ -1,1 +1,33 @@
-body {}
+body {
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: $font_weight;
+  line-height: $line_height;
+  color: $font_color;
+  background-color: $body_bg_color;
+}
+
+.sticky-footer {
+  position: relative;
+  min-height: 100%;
+  body {
+    margin-bottom: $body_mb_mob + $footer_height_mob;
+    @media (min-width: 576px) {
+      margin-bottom: $body_mb + $footer_height;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer_height_mob;
+      @media (min-width: 576px) {
+        height: $footer_height;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
