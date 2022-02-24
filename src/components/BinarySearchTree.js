@@ -72,7 +72,6 @@ export default class BinarySearchTree {
   }
 
   findMinNode(node) {
-    // TODO: Need to balancing tree?
     if (node.left === null) return node;
     return this.findMinNode(node.left);
   }
@@ -83,7 +82,42 @@ export default class BinarySearchTree {
 
   removeNode(node, data) {
 
-    // TODO: Need to balancing tree?
+    if (node === null) {
+      return null;
+    }
+
+    if (data < node.data) {
+      node.left = this.removeNode(node.left, data);
+      return node;
+    }
+
+    if (data > node.data) {
+      node.right = this.removeNode(node.right, data);
+      return node;
+    }
+
+    if (data === node.data) {
+
+      if (node.left === null && node.right === null) {
+          node = null;
+          return node;
+      }
+
+      if (node.left === null) {
+          node = node.right;
+          return node;
+      }
+
+      if (node.right === null) {
+          node = node.left;
+          return node;
+      }
+
+      let newNode = this.findMinNode(node.right);
+      node.data = newNode.data;
+      node.right = this.removeNode(node.right, newNode.data);
+      return node;
+    }
 
   }
 
